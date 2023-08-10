@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container my-5 shadow p-5 rounded-2">
+      <h1 class="mb-4 text-center">Currency Converter</h1>
+      <div class="text-center">
+        <label for="amount" class="d-block text-start">Amount</label>
+        <input
+          type="number"
+          id="amount"
+          value="1"
+          class="form-control mt-2"/>
+        <div class="input-group my-4 d-flex align-items-center">
+          <span class="input-group-text p-2"
+            ><img
+              src="https://flagcdn.com/16x12/us.png"
+              width="20"
+              height="20"
+              id="imgFrom"
+          /></span>
+          <select name="from" id="from" class="form-select"></select>
+        </div>
+        <i class="fa-solid fa-right-left fa-rotate-90 fa-lg" role="button" id="exchange"></i>
+        <div class="input-group mt-4 d-flex align-items-center">
+          <span class="input-group-text p-2"
+            ><img
+              src="https://flagcdn.com/16x12/eg.png"
+              width="20"
+              height="20"
+              id="imgTo" /></span
+          ><select name="to" id="to" class="form-select"></select>
+        </div>
+        <p class="my-4 fs-5"></p>
+        <button class="btn btn-primary">Get Exchange Rate</button>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/country.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
